@@ -1,0 +1,13 @@
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (1, 0, 2, '课程管理', 1, '2016-3-16 09:13:46', 1, 'sys_course_memo');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (11, 1, 2, 'java', 1, '2016-3-16 09:24:15', 1, '11111');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (12, 1, 2, 'HTML', 1, '2016-3-16 09:28:08', 1, '444444444');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (111, 11, 2, 'java Web', 2, '2016-3-18 17:33:02', 2, '2222222222');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (112, 11, 1, 'javaScript', 1, '2016-3-16 09:26:02', 1, '33333333');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (121, 12, 2, 'HTML5+CSS3', 2, '2016-3-16 17:27:00', 1, '555555555');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (122, 12, 1, 'CSS3', 2, '2016-3-16 17:33:23', 2, '6666666666');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (123, 1, 2, 'PHP', 2, '2016-3-18 13:36:12', 1, '拍簧片');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (124, 123, 2, 'HTTP', 2, '2016-3-18 13:37:52', 1, 'HTTP');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (126, 121, 1, 'XML', 2, '2016-3-18 17:22:11', 1, 'XML');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (127, 111, 1, 'pppp', 2, '2016-3-18 17:35:01', 1, 'pppppp');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (128, 11, 1, 'www', 2, '2016-3-18 17:35:40', 1, 'www');
+INSERT INTO `sys_course` (`id`, `pid`, `is_leaf`, `name`, `operate_user_id`, `operate_time`, `state`, `memo`) VALUES (129, 1, 1, 'wps', 2, '2016-3-18 17:56:22', 1, 'wps');

@@ -1,0 +1,28 @@
+// 一级菜单
+public class Privilege {
+
+   private String menuName;
+   private String url;
+   // 二级菜单
+   private List<Privilege> privilegeList;
+}
+
+
+
+List<Privilege> allPrivilegeList = 根据所属角色得到所有权限（）；
+
+// 放到session里
+session.setAttribute("allPrivilegeList", allPrivilegeList );
+
+
+// 显示
+<s:iterate value="allPrivilegeList">
+   //一级菜单
+   <a href="javascript:void(0)"><s:property value="menuName"/></a><br>
+   // 二级菜单
+   <s:iterate value="privilegeList">
+      <a href="url"><s:property value="menuName"/></a> <br>
+   </s:iterate>
+</s:iterate>
+
+

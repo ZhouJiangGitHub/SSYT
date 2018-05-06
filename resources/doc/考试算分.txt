@@ -1,0 +1,46 @@
+考试算分：拿正确的答案和学员做的答案做比较，如果相等就加上相应题的分数！
+
+一、正确答案如何存放？什么时候存放？
+public ExamPlanAnswer {
+   static Map<考试安排id，List<对应考试安排试卷的正确答案(试题id、试题答案、试题分数)>> answerMap = new HashMap<>();
+}
+
+Plan plan = new Plan();
+plan.setPaper(3);
+Serilarible id = session.save(plan);
+
+查询试卷id=3里面的所有习题信息：
+   试题id、试题答案、试题分数
+
+answerMap.put(id , List<正确答案>);
+
+总结：
+    1）正确答案以static Map存放，map的key存放考试安排的id,map的value存放考试安排的试卷的全部正确答案
+    2）在添加考试安排后存放（ExamPlanAnswer.answerMap.put(id , List<正确答案>);）
+
+
+
+二、学员答案
+学员在做题时，做完一道就向后台发送存放它做的考试安排id、题号和答案。
+哪后台应该如何存放？
+public ExamPlanAnswer{ 
+   static Map<考试安排id, Map<学员id, List<学员答案（试题id，答案）>> studentmap = new HashMap<>();
+}
+
+
+三、算分
+学员点击交卷时开始算分。
+1、通过考试安排id可以确定对应的正确答案。
+   List 正确答案 = ExamPlanAnswer.answerMap.get(考试安排id);
+2、通过考试安排id可以确定学员的答案
+   Map 所有学员的正确答案 = ExamPlanAnswer.studentmap.get（考试安排id）;
+   List 张三的正确答案 = 所有学员的正确答案.get(张三的id);
+3、比较：
+   正确答案和张三的正确答案比较，如果比较成功加上相应题的分数即可，最后得到总分！
+
+   提示：
+      1）循环比较
+      2）试题id相等就比较答案，如果答案相等，就加上题的分数！
+
+扩展：
+   设置一个考试倒计时的功能，如果到点了，强制提交试卷！！！
