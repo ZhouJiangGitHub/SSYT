@@ -1,15 +1,13 @@
 {
-	"browser": true,
-	"qunit": true,
-
-	"-W053": true,
-
-	"extends": "../.jshintrc",
-	"globals": {
-		"require": true,
-		"unescape": true,
-		"lifecycle": true,
-		"using": true,
-		"addEvent": true
-	}
+  "browser": true,
+  "qunit": true,
+  "-W053": true,
+  "extends": "../.jshintrc",
+  "globals": {
+    "require": true,
+    "unescape": true,
+    "lifecycle": true,
+    "using": true,
+    "addEvent": true
+  }
 }

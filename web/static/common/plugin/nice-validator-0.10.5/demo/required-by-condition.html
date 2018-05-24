@@ -38,18 +38,18 @@
 </form>
 
 <script>
-$('#form2').validator({
-    timely: 3,
-    focusCleanup: true,
-    rules: {
-        isPersonal: function() {
-            return $('#isPersonal').prop('checked');
+    $('#form2').validator({
+        timely: 3,
+        focusCleanup: true,
+        rules: {
+            isPersonal: function () {
+                return $('#isPersonal').prop('checked');
+            }
+        },
+        fields: {
+            email: 'required(isPersonal); email'
         }
-    },
-    fields: {
-        email: 'required(isPersonal); email'
-    }
-});
+    });
 </script>
 
 </body>

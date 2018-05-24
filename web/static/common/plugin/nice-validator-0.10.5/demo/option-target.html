@@ -15,7 +15,8 @@
     <h3>Target to other input</h3>
     <div class="form-item">
         <label class="label">Name</label>
-        <input type="text" class="input-sm" name="firstName" data-target="#lastName" data-rule="required" placeholder="First Name">
+        <input type="text" class="input-sm" name="firstName" data-target="#lastName" data-rule="required"
+               placeholder="First Name">
         <input type="text" class="input-sm" name="lastName" id="lastName" data-rule="required" placeholder="Last Name">
     </div>
     <div class="form-item">
@@ -53,28 +54,28 @@
     <div class="form-item">
         <label class="label">Name</label>
         <input type="text" class="input-sm" name="firstName" data-rule="required" placeholder="First Name">
-        <input type="text" class="input-sm" name="lastName"  data-rule="required" placeholder="Last Name">
+        <input type="text" class="input-sm" name="lastName" data-rule="required" placeholder="Last Name">
     </div>
     <div class="form-item">
         <button type="submit">Submit</button>
     </div>
 </form>
 <script>
-$('#form4').validator({
-    timely:2,
-    stopOnError: true,
-    display: function(input) {
-        return $(input).attr('placeholder');
-    },
-    target: function(input) {
-        var $formitem = $(input).closest('.form-item'),
-            $msgbox = $formitem.find('span.msg-box');
-        if (!$msgbox.length) {
-            $msgbox = $('<span class="msg-box"></span>').appendTo($formitem);
+    $('#form4').validator({
+        timely: 2,
+        stopOnError: true,
+        display: function (input) {
+            return $(input).attr('placeholder');
+        },
+        target: function (input) {
+            var $formitem = $(input).closest('.form-item'),
+                $msgbox = $formitem.find('span.msg-box');
+            if (!$msgbox.length) {
+                $msgbox = $('<span class="msg-box"></span>').appendTo($formitem);
+            }
+            return $msgbox;
         }
-        return $msgbox;
-    }
-});
+    });
 </script>
 
 

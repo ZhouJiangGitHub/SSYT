@@ -1,42 +1,51 @@
 package com.second.ssyt.examinationpaper.entity;
 
-public class ExamEntity{
-	private int id;
-	private String examClassroom;
-	private int examPaperId;
-	private int toClassId;
-	private int state;
-	public int getToClassId() {
-		return toClassId;
-	}
-	public void setToClassId(int toClassId) {
-		this.toClassId = toClassId;
-	}
-	public int getState() {
-		return state;
-	}
-	public void setState(int state) {
-		this.state = state;
-	}
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getExamClassroom() {
-		return examClassroom;
-	}
-	public void setExamClassroom(String examClassroom) {
-		this.examClassroom = examClassroom;
-	}
-	public int getExamPaperId() {
-		return examPaperId;
-	}
-	public void setExamPaperId(int examPaperId) {
-		this.examPaperId = examPaperId;
-	}
+public class ExamEntity {
+    private int id;
+    private String examClassroom;
+    private int examPaperId;
+    private int toClassId;
+    private int state;
+
+    public int getToClassId() {
+        return toClassId;
+    }
+
+    public void setToClassId(int toClassId) {
+        this.toClassId = toClassId;
+    }
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getExamClassroom() {
+        return examClassroom;
+    }
+
+    public void setExamClassroom(String examClassroom) {
+        this.examClassroom = examClassroom;
+    }
+
+    public int getExamPaperId() {
+        return examPaperId;
+    }
+
+    public void setExamPaperId(int examPaperId) {
+        this.examPaperId = examPaperId;
+    }
 }
 /*
 public class PageModel<T>{

@@ -7,121 +7,127 @@ import java.sql.Date;
  * SysCourse entity. @author MyEclipse Persistence Tools
  */
 
-public class SysCourseEntity  {
+public class SysCourseEntity {
 
-	// Fields
+    // Fields
 
-	private int id;
-	private int pid;
-	private Short isLeaf;
-	private String name;
-	private int operateUserId;
-	private Date operateTime;
-	private Short state;
-	private String memo;
+    private int id;
+    private int pid;
+    private Short isLeaf;
+    private String name;
+    private int operateUserId;
+    private Date operateTime;
+    private Short state;
+    private String memo;
 
-	// Constructors
+    // Constructors
 
-	/** default constructor */
-	public SysCourseEntity() {
-	}
+    /**
+     * default constructor
+     */
+    public SysCourseEntity() {
+    }
 
-	/** minimal constructor */
-	public SysCourseEntity(int pid, Short isLeaf, String name,
-			int operateUserId, Date operateTime, Short state) {
-		this.pid = pid;
-		this.isLeaf = isLeaf;
-		this.name = name;
-		this.operateUserId = operateUserId;
-		this.operateTime = operateTime;
-		this.state = state;
-	}
+    /**
+     * minimal constructor
+     */
+    public SysCourseEntity(int pid, Short isLeaf, String name,
+                           int operateUserId, Date operateTime, Short state) {
+        this.pid = pid;
+        this.isLeaf = isLeaf;
+        this.name = name;
+        this.operateUserId = operateUserId;
+        this.operateTime = operateTime;
+        this.state = state;
+    }
 
-	/** full constructor */
-	public SysCourseEntity(int pid, Short isLeaf, String name,
-			int operateUserId, Date operateTime, Short state,
-			String memo) {
-		this.pid = pid;
-		this.isLeaf = isLeaf;
-		this.name = name;
-		this.operateUserId = operateUserId;
-		this.operateTime = operateTime;
-		this.state = state;
-		this.memo = memo;
-	}
+    /**
+     * full constructor
+     */
+    public SysCourseEntity(int pid, Short isLeaf, String name,
+                           int operateUserId, Date operateTime, Short state,
+                           String memo) {
+        this.pid = pid;
+        this.isLeaf = isLeaf;
+        this.name = name;
+        this.operateUserId = operateUserId;
+        this.operateTime = operateTime;
+        this.state = state;
+        this.memo = memo;
+    }
 
-	// Property accessors
-	
-	
-	public int getId() {
-		return this.id;
-	}
+    // Property accessors
 
-	public void setId(int id) {
-		this.id = id;
-	}
 
-	
-	public int getPid() {
-		return this.pid;
-	}
+    public int getId() {
+        return this.id;
+    }
 
-	public void setPid(int pid) {
-		this.pid = pid;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	
-	public Short getIsLeaf() {
-		return this.isLeaf;
-	}
 
-	public void setIsLeaf(Short isLeaf) {
-		this.isLeaf = isLeaf;
-	}
+    public int getPid() {
+        return this.pid;
+    }
 
-	
-	public String getName() {
-		return this.name;
-	}
+    public void setPid(int pid) {
+        this.pid = pid;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
 
-	
-	public int getOperateUserId() {
-		return this.operateUserId;
-	}
+    public Short getIsLeaf() {
+        return this.isLeaf;
+    }
 
-	public void setOperateUserId(int operateUserId) {
-		this.operateUserId = operateUserId;
-	}
+    public void setIsLeaf(Short isLeaf) {
+        this.isLeaf = isLeaf;
+    }
 
-	
-	public Date getOperateTime() {
-		return this.operateTime;
-	}
 
-	public void setOperateTime(Date operateTime) {
-		this.operateTime = operateTime;
-	}
+    public String getName() {
+        return this.name;
+    }
 
-	
-	public Short getState() {
-		return this.state;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setState(Short state) {
-		this.state = state;
-	}
 
-	
-	public String getMemo() {
-		return this.memo;
-	}
+    public int getOperateUserId() {
+        return this.operateUserId;
+    }
 
-	public void setMemo(String memo) {
-		this.memo = memo;
-	}
+    public void setOperateUserId(int operateUserId) {
+        this.operateUserId = operateUserId;
+    }
+
+
+    public Date getOperateTime() {
+        return this.operateTime;
+    }
+
+    public void setOperateTime(Date operateTime) {
+        this.operateTime = operateTime;
+    }
+
+
+    public Short getState() {
+        return this.state;
+    }
+
+    public void setState(Short state) {
+        this.state = state;
+    }
+
+
+    public String getMemo() {
+        return this.memo;
+    }
+
+    public void setMemo(String memo) {
+        this.memo = memo;
+    }
 
 }
